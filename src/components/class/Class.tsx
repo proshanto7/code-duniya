@@ -29,14 +29,14 @@ function Class() {
   ];
 
   return (
-    <section className="mb-[141px]">
+    <section className="lg:mb-[141px] md:mb-15 mb-10">
       <Container>
-        <Flex className="gap-[35px]">
-          <div>
-            <Image imgUrl={ClassImg} alt="class img" />
+        <Flex className="lg:gap-[35px] flex-col sm:flex-row gap-5">
+          <div className="sm:w-2/4 w-full">
+            <Image imgUrl={ClassImg} alt="class img" className="w-full" />
           </div>
-          <div>
-            <h2 className="text-4xl text-black font-anek font-bold mb-8">
+          <div className="sm:w-2/4 w-full">
+            <h2 className="lg:text-4xl md:text-3xl text-2xl text-black font-anek font-bold mb-5 lg:mb-8">
               আমাদের ক্লাসের বিশেষত্ব
             </h2>
 
@@ -44,7 +44,7 @@ function Class() {
               <ListItem
                 key={item.id}
                 items={item}
-                className="text-2xl text-black font-anek font-medium mb-6 ml-12"
+                className="lg:text-2xl md:text-lg text-[16px] text-black font-anek font-medium mb-3 lg:mb-6 ml-12"
               />
             ))}
           </div>

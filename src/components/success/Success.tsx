@@ -126,7 +126,7 @@ function Success() {
   }
 
   return (
-    <section className="pb-[200px]">
+    <section className="lg:pb-[200px] sm:pb-15 pb-10 ">
       <Container>
         <Title title="কেন আমরাই সেরা" subtitle="কেন আপনি আমাদের লার্নার হবেন" />
 

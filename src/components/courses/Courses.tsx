@@ -104,7 +104,7 @@ function Courses() {
   const btnTitle = isExpanded ? "কোর্স বন্ধ করুন" : "আরও কোর্স দেখুন";
 
   return (
-    <section className="pt-[180px] pb-24">
+    <section className="lg:pt-[180px] pt-[120px] lg:pb-24 pb-10">
       <Container>
         <Title
           title="আমাদের কোর্স সমুহ"
