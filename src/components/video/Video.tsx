@@ -32,14 +32,14 @@ function Video() {
           subtitle="আমাদের হাতে তৈরি হওয়া প্রতিটি নক্ষত্র"
         />
 
-        <div className="grid grid-cols-2 gap-6 mb-14">
+        <div className="grid grid-cols-2 gap-6 mb-5 md:mb-14">
           {videoList.map((item) => (
             <VideoItem item={item} key={item.id} />
           ))}
         </div>
         <Button
           title="আরও দেখুন"
-          className="font-anek font-semibold text-2xl text-white px-[58px] py-3 bg-secendary rounded-[15px] mb-22 block mx-auto"
+          className="font-anek font-semibold text-[16px] md:text-2xl text-white px-5 md:px-[58px] py-2 md:py-3 bg-secendary rounded-[15px] mb-5 lg:mb-22 block mx-auto"
         />
       </Container>
     </section>
