@@ -17,20 +17,22 @@ function CourseItems({ item }: { item: coursesType }) {
   return (
     <div
       key={id}
-      className=" bg-[#415A77] w-[377px] rounded-[15px] text-white "
+      className=" bg-[#415A77] w-full xl:w-[377px] rounded-[15px] text-white "
     >
-      <img src={imgUrl} alt={name} />
+      <img src={imgUrl} alt={name} className="w-screen" />
 
       <div className="p-[15px]">
         <div className="flex justify-between items-center">
-          <h6 className="font-poppins text-[15px] font-medium">{category}</h6>
+          <h6 className="font-poppins text-[14px] lg:text-[15px] font-medium">{category}</h6>
 
           <div className="flex gap-1 items-center">
             <img src={userIcon} alt="icone" className="w-2.5 h-2.5" />
-            <h6 className="font-anek font-normal text-[15px]">{students}</h6>
+            <h6 className="font-anek font-normal text-[14px] lg:text-[15px]">{students}</h6>
           </div>
         </div>
-        <h3 className="text-2xl font-bold font-poppins mb-3.5">{name}</h3>
+        <h3 className=" text-[18px] lg:text-2xl font-bold font-poppins mb-3.5">
+          {name}
+        </h3>
 
         <div className="flex justify-between items-end ">
           <div>
@@ -44,7 +46,7 @@ function CourseItems({ item }: { item: coursesType }) {
 
           <Button
             title={discoutBtn}
-            className="font-anek font-semibold text-[20px] text-white px-[22px] py-2.5 bg-primary rounded-[10px]"
+            className="font-anek font-semibold text-[16px] md:text-[20px] text-white px-3 md:px-[22px] py-2.5 bg-primary rounded-[10px]"
           ></Button>
         </div>
       </div>

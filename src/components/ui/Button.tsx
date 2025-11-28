@@ -1,8 +1,8 @@
 
 
-function Button({title ,className} : {title : string , className?:string}) {
+function Button({title ,className , onClick} : {title : string , className?:string, onClick?: () => void}) {
   return (
-    <button className={`cursor-pointer ${className}`} >{title}</button>
+    <button onClick={onClick} className={`cursor-pointer ${className}`} >{title}</button>
   )
 }
 

@@ -17,8 +17,8 @@ function App() {
       <Courses />
       <Success />
       <Class />
-      <Video/>
-      // <Footer/>
+      <Video />
+      // <Footer />
     </main>
   );
 }
