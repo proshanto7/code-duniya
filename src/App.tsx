@@ -16,9 +16,9 @@ function App() {
       </section>
       <Courses />
       <Success />
-      <Class />
+      {/* <Class />
       <Video />
-      // <Footer />
+      // <Footer /> */}
     </main>
   );
 }

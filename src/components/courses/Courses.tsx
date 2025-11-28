@@ -112,7 +112,7 @@ function Courses() {
         দ্বারা পরিপূর্ণ"
         />
 
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6">
+        <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-6">
           {coursestoShow.map((item) => (
             <CourseItems item={item} key={item.id} />
           ))}

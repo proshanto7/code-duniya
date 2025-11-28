@@ -18,7 +18,7 @@ function Success() {
     },
     {
       id: 2,
-      ratio: "১০,০০০ + +",
+      ratio: "১০,০০০ +",
       title: "ক্যারিয়ার প্লেসমেন্ট",
       discription:
         "আমাদের চাকরির স্থান নির্ধারণ বিভাগ ১০,০০০ এরও বেশি দক্ষ শিক্ষার্থীকে প্রতিযোগিতামূলক বিশ্ব বাজারে চাকরি খুঁজে পেতে সাহায্য করেছে। উন্নত ভবিষ্যতের প্রতিশ্রুতি দিয়ে, আমরা শিক্ষার্থীদের ক্রমাগত ক্যারিয়ার সহায়তা প্রদানের মাধ্যমে চাকরির স্থান নির্ধারণের হার সফলভাবে ৬৭% এ উন্নীত করেছি।",
@@ -47,6 +47,36 @@ function Success() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   function SampleNextArrow(props: onClickType) {
